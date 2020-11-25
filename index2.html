@@ -2,14 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emil Clicker</title>
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="myScript.js"></script>
-
 </head>
 <body>
-    
     <div class="emilcounterbox">
         <p id="k">0</p>
     </div>
@@ -32,37 +29,29 @@
             document.getElementById("f").src="emil2.jpg";
             document.getElementById("f").onclick=emilcounter2x;
             document.getElementById("upgradebutton").innerHTML = "Upgrade 100";
-            document.getElementById("upgradebutton").onclick=emilcounter4x;
+            document.getElementById("upgradebutton").onclick=emil3;
             }
         }
         function emilcounter2x(){
             document.getElementById("k").innerHTML = x + 1;
             x = x + 1;
         }
-        function emil3(){
-            if (x > 99){
-                document.getElementById("k").innerHTML = x - 100;
-                x = x - 100;
+            function emil3(){
+                if (x > 99){
+                    document.getElementById("k").innerHTML = x - 100;
+                        x = x - 100;
+            document.getElementById("f").src="emil3.png";
+            document.getElementById("f").onclick=emilcounter4x;
+            document.getElementById("upgradebutton").innerHTML = "Upgrade 1000";
+            document.getElementById("upgradebutton").onclick=emil4;
             }
-        
-                document.getElementById("f").src="emil3.png";
-                document.getElementById("f").onclick=emilcounter4x;
-                document.getElementById("upgradebutton").innerHTML = "Upgrade 1000";
-                document.getElementById("upgradebutton").onclick=emilcounter4x;
-                document.getElementById("k").innerHTML = x + 3;
-                x = x + 3;
         }
-
         function emilcounter4x(){
-            
+            document.getElementById("k").innerHTML = x + 3;
+            x = x + 3;
         }
 
-            function emilcounter8x(){
-            if (x > 999){
-                document.getElementById("k").innerHTML = x - 1000;
-                x = x - 1000;
-            }
-        }
+
     </script>
 </body>
 </html>

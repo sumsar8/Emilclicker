@@ -1,0 +1,9 @@
+.emilcounterbox{
+    min-width: 100px;
+    max-width: 175px;
+    max-height: 50px;
+    min-height: 50px;
+    margin-left: 10px;
+    margin-top: 10px;   
+}
+
