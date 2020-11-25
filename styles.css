@@ -7,3 +7,20 @@
     margin-top: 10px;   
 }
 
+.button {
+    size: 0px;
+    border: 0px;
+    padding: 0px;
+    border: none;
+    display: inline-block;
+    border-radius: 0px;
+}
+
+#piss{
+    border:0px;
+}
+
+img{
+    vertical-align: middle;
+
+}

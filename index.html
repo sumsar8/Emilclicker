@@ -12,7 +12,7 @@
     </div>
 
     <button id="upgradebutton" onclick="emil2()">Upgrade cost 10</button>
-    <button onclick="emilcounter()"><img id="f" src="emil1.jpg" width="250px" height="250px"></button>
+    <button class="button" id="piss" onclick="emilcounter()"><img id="f" class="button" src="emil1.jpg" width="250px" height="250px"></button>
 
     <script>
         var x;
@@ -76,13 +76,20 @@
             document.getElementById("f").src="emil5.png";
             document.getElementById("f").onclick=emilcounter30x;
             document.getElementById("upgradebutton").innerHTML = "Maxed";
-
+            document.getElementById("upgradebutton").onclick=emil6;
             }
         }
         function emilcounter30x(){
             document.getElementById("k").innerHTML = x + 49;
-            x = x + 29;
+            x = x + 49;
         }
+        function emil6(){
+            if (x > 0){
+                document.getElementById("k").innerHTML = x - 0;
+                x = x - 0;
+            }
+        }
+
     </script>
 </body>
 </html>
