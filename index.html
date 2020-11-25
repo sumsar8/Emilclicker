@@ -74,22 +74,36 @@
                         x = x - 10000;
                         
             document.getElementById("f").src="emil5.png";
-            document.getElementById("f").onclick=emilcounter30x;
-            document.getElementById("upgradebutton").innerHTML = "Maxed";
+            document.getElementById("f").onclick=emilcounter50x;
+            document.getElementById("upgradebutton").innerHTML = "Upgrade 100 000";
             document.getElementById("upgradebutton").onclick=emil6;
             }
         }
-        function emilcounter30x(){
+        function emilcounter50x(){
             document.getElementById("k").innerHTML = x + 49;
             x = x + 49;
         }
         function emil6(){
+            if (x > 99999){
+                document.getElementById("k").innerHTML = x - 100000;
+                x = x - 100000;
+
+            document.getElementById("f").src="Windis.png";
+            document.getElementById("f").onclick=emilcounter100x;
+            document.getElementById("upgradebutton").innerHTML = "Maxed";
+            document.getElementById("upgradebutton").onclick=emil7;
+            }
+        }
+        function emilcounter100x(){
+            document.getElementById("k").innerHTML = x + 99;
+            x = x + 99;
+        }
+        function emil7(){
             if (x > 0){
                 document.getElementById("k").innerHTML = x - 0;
                 x = x - 0;
             }
         }
-
     </script>
 </body>
 </html>
