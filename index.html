@@ -2,14 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emil Clicker</title>
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="myScript.js"></script>
-
 </head>
 <body>
-    
     <div class="emilcounterbox">
         <p id="k">0</p>
     </div>
@@ -30,38 +27,61 @@
             x = x - 10;   
 
             document.getElementById("f").src="emil2.jpg";
-            document.getElementById("f").onclick=emilcounter2x;
+            document.getElementById("f").onclick=emilcounter4x;
             document.getElementById("upgradebutton").innerHTML = "Upgrade 100";
-            document.getElementById("upgradebutton").onclick=emilcounter4x;
+            document.getElementById("upgradebutton").onclick=emil3;
             }
         }
-        function emilcounter2x(){
-            document.getElementById("k").innerHTML = x + 1;
-            x = x + 1;
-        }
-        function emil3(){
-            if (x > 99){
-                document.getElementById("k").innerHTML = x - 100;
-                x = x - 100;
-            }
-        
-                document.getElementById("f").src="emil3.png";
-                document.getElementById("f").onclick=emilcounter4x;
-                document.getElementById("upgradebutton").innerHTML = "Upgrade 1000";
-                document.getElementById("upgradebutton").onclick=emilcounter4x;
-                document.getElementById("k").innerHTML = x + 3;
-                x = x + 3;
-        }
-
         function emilcounter4x(){
-            
+            document.getElementById("k").innerHTML = x + 3;
+            x = x + 3;
+        }
+            function emil3(){
+                if (x > 99){
+                    document.getElementById("k").innerHTML = x - 100;
+                        x = x - 100;
+
+            document.getElementById("f").src="emil3.png";
+            document.getElementById("f").onclick=emilcounter10x;
+            document.getElementById("upgradebutton").innerHTML = "Upgrade 1000";
+            document.getElementById("upgradebutton").onclick=emil4;
+            }
+        }
+        function emilcounter10x(){
+            document.getElementById("k").innerHTML = x + 9;
+            x = x + 9;
         }
 
-            function emilcounter8x(){
-            if (x > 999){
-                document.getElementById("k").innerHTML = x - 1000;
-                x = x - 1000;
+        function emil4(){
+                if (x > 999){
+                    document.getElementById("k").innerHTML = x - 1000;
+                        x = x - 1000;
+                        
+            document.getElementById("f").src="emil4.png";
+            document.getElementById("f").onclick=emilcounter16x;
+            document.getElementById("upgradebutton").innerHTML = "Upgrade 10000";
+            document.getElementById("upgradebutton").onclick=emil5;
             }
+        }
+        function emilcounter16x(){
+            document.getElementById("k").innerHTML = x + 15;
+            x = x + 15;
+        }
+
+        function emil5(){
+                if (x > 9999){
+                    document.getElementById("k").innerHTML = x - 10000;
+                        x = x - 10000;
+                        
+            document.getElementById("f").src="emil5.png";
+            document.getElementById("f").onclick=emilcounter30x;
+            document.getElementById("upgradebutton").innerHTML = "Maxed";
+
+            }
+        }
+        function emilcounter30x(){
+            document.getElementById("k").innerHTML = x + 49;
+            x = x + 29;
         }
     </script>
 </body>
