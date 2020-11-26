@@ -7,103 +7,117 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="emilcounterbox">
-        <p id="k">0</p>
-    </div>
 
-    <button id="upgradebutton" onclick="emil2()"><img id="Upgradepic" src="images/MouseUpgrade2.png" width="100" height="100"></button>
+    <div class="header">
+        <button id="upgradebutton1" onclick="Upgradebuttona()"><img id="Upgradepic1" src="images/MouseUpgrade2.png" width="100" height="100"></button>
+        <button id="upgradebutton2" onclick="Upgradebuttonb()"><img id="Upgradepic2" src="images/MouseUpgrade3.png" width="100" height="100"></button>
+        <button id="upgradebutton3" onclick="Upgradebuttonc()"><img id="Upgradepic3" src="images/MouseUpgrade4.png" width="100" height="100"></button>
+        <button id="upgradebutton4" onclick="Upgradebuttond()"><img id="Upgradepic4" src="images/MouseUpgrade5.png" width="100" height="100"></button>
+        <button id="upgradebutton4" onclick="Upgradebuttone()"><img id="Upgradepic5" src="images/MouseUpgrade5.png" width="100" height="100"></button>
+
+      </div>
+      
+      <div class="row">
+        <div class="column side" style="background-color:#aaa;">
+
+        </div>
+
+        <div class="column middle" style="background-color:#bbb;"><center>
+        <div class="emilcounterbox">
+        <p id="Gudnummer" class="Gudnummercss">0</p>
+    </div>
     <button class="button" id="piss" onclick="emilcounter()"><img id="f" class="button" src="/images/emil1.jpg" width="250px" height="250px" ondragstart="return false;"></button>
 
+    </center></div>
+
+        <div class="column side" style="background-color:#ccc;">
+        
+        </div>
+      </div>
+      
+      <div class="footer">
+        <p>aj karamba</p>
+      </div>
+      
     <script>
         var x;
         x = 0;
         function emilcounter(){
-            document.getElementById("k").innerHTML = x + 1;
+            document.getElementById("Gudnummer").innerHTML = x + 1;
             x = x + 1;
         }
-        function emil2(){
-            if (x > 9){
-                document.getElementById("k").innerHTML = x - 10;
-            x = x - 10;   
 
-            document.getElementById("f").src="/images/emil2.jpg";
-            document.getElementById("f").onclick=emilcounter4x;
-            document.getElementById("Upgradepic").src = "/images/MouseUpgrade3.png";
-            document.getElementById("upgradebutton").onclick=emil3;
+        function Upgradebuttona(){
+            if (x > 9){
+                document.getElementById("Upgradepic1").src = "/images/Checkmark.png";
+                document.getElementById("Gudnummer").innerHTML = x - 10;
+                x = x - 10;
+                document.getElementById("f").onclick = emilcounter4x;
+                document.getElementById("f").src = "/images/emil2.jpg";
             }
         }
         function emilcounter4x(){
-            document.getElementById("k").innerHTML = x + 3;
+            document.getElementById("Gudnummer").innerHTML = x + 3;
             x = x + 3;
         }
-            function emil3(){
-                if (x > 99){
-                    document.getElementById("k").innerHTML = x - 100;
-                        x = x - 100;
 
-            document.getElementById("f").src = "/images/emil3.png";
-            document.getElementById("f").onclick=emilcounter10x;
-            document.getElementById("Upgradepic").src = "/images/MouseUpgrade4.png";
-            document.getElementById("upgradebutton").onclick=emil4;
+        function Upgradebuttonb(){
+            if (x > 99){
+                document.getElementById("Upgradepic2").src = "/images/Checkmark.png";
+                document.getElementById("Gudnummer").innerHTML = x - 100;
+                x = x - 100;
+                document.getElementById("f").onclick = emilcounter10x;
+                document.getElementById("f").src = "/images/emil3.png";
             }
         }
         function emilcounter10x(){
-            document.getElementById("k").innerHTML = x + 9;
+            document.getElementById("Gudnummer").innerHTML = x + 9;
             x = x + 9;
         }
 
-        function emil4(){
-                if (x > 999){
-                    document.getElementById("k").innerHTML = x - 1000;
-                        x = x - 1000;
-                        
-            document.getElementById("f").src="/images/emil4.png";
-            document.getElementById("f").onclick=emilcounter16x;
-            document.getElementById("Upgradepic").src = "/images/MouseUpgrade5.png";
-            document.getElementById("upgradebutton").onclick=emil5;
+        function Upgradebuttonc(){
+            if (x > 999){
+                document.getElementById("Upgradepic3").src = "/images/Checkmark.png";
+                document.getElementById("Gudnummer").innerHTML = x - 1000;
+                x = x - 1000;
+                document.getElementById("f").onclick = emilcounter16x;
+                document.getElementById("f").src = "/images/emil4.png";
             }
         }
         function emilcounter16x(){
-            document.getElementById("k").innerHTML = x + 15;
+            document.getElementById("Gudnummer").innerHTML = x + 15;
             x = x + 15;
         }
-
-        function emil5(){
-                if (x > 9999){
-                    document.getElementById("k").innerHTML = x - 10000;
-                        x = x - 10000;
-                        
-            document.getElementById("f").src="/images/emil5.png";
-            document.getElementById("f").onclick=emilcounter50x;
-            document.getElementById("Upgradepic").innerHTML = "Upgrade 100 000";
-            document.getElementById("upgradebutton").onclick=emil6;
+        
+        function Upgradebuttond(){
+            if (x > 9999){
+                document.getElementById("Upgradepic4").src = "/images/Checkmark.png";
+                document.getElementById("Gudnummer").innerHTML = x - 10000;
+                x = x - 10000;
+                document.getElementById("f").onclick = emilcounter50x;
+                document.getElementById("f").src = "/images/emil5.png";
             }
         }
         function emilcounter50x(){
-            document.getElementById("k").innerHTML = x + 49;
+            document.getElementById("Gudnummer").innerHTML = x + 49;
             x = x + 49;
         }
-        function emil6(){
+        
+        function Upgradebuttone(){
             if (x > 99999){
-                document.getElementById("k").innerHTML = x - 100000;
+                document.getElementById("Upgradepic5").src = "/images/Checkmark.png";
+                document.getElementById("Gudnummer").innerHTML = x - 100000;
                 x = x - 100000;
-
-            document.getElementById("f").src="/images/Windis.png";
-            document.getElementById("f").onclick=emilcounter100x;
-            document.getElementById("Upgradepic").src = "/images/Checkmark.png";
-            document.getElementById("upgradebutton").onclick=emil7;
+                document.getElementById("f").onclick = emilcounter100x;
+                document.getElementById("f").src = "/images/emil3.png";
             }
         }
         function emilcounter100x(){
-            document.getElementById("k").innerHTML = x + 99;
+            document.getElementById("Gudnummer").innerHTML = x + 99;
             x = x + 99;
         }
-        function emil7(){
-            if (x > 0){
-                document.getElementById("k").innerHTML = x - 0;
-                x = x - 0;
-            }
-        }
+
+    
     </script>
 </body>
 </html>
