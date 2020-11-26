@@ -11,8 +11,8 @@
         <p id="k">0</p>
     </div>
 
-    <button id="upgradebutton" onclick="emil2()">Upgrade cost 10</button>
-    <button class="button" id="piss" onclick="emilcounter()"><img id="f" class="button" src="emil1.jpg" width="250px" height="250px" ondragstart="return false;"></button>
+    <button id="upgradebutton" onclick="emil2()"><img id="Upgradepic" src="images/MouseUpgrade2.png" width="100" height="100"></button>
+    <button class="button" id="piss" onclick="emilcounter()"><img id="f" class="button" src="/images/emil1.jpg" width="250px" height="250px" ondragstart="return false;"></button>
 
     <script>
         var x;
@@ -26,9 +26,9 @@
                 document.getElementById("k").innerHTML = x - 10;
             x = x - 10;   
 
-            document.getElementById("f").src="emil2.jpg";
+            document.getElementById("f").src="/images/emil2.jpg";
             document.getElementById("f").onclick=emilcounter4x;
-            document.getElementById("upgradebutton").innerHTML = "Upgrade 100";
+            document.getElementById("Upgradepic").src = "/images/MouseUpgrade3.png";
             document.getElementById("upgradebutton").onclick=emil3;
             }
         }
@@ -41,9 +41,9 @@
                     document.getElementById("k").innerHTML = x - 100;
                         x = x - 100;
 
-            document.getElementById("f").src="emil3.png";
+            document.getElementById("f").src = "/images/emil3.png";
             document.getElementById("f").onclick=emilcounter10x;
-            document.getElementById("upgradebutton").innerHTML = "Upgrade 1000";
+            document.getElementById("Upgradepic").src = "/images/MouseUpgrade4.png";
             document.getElementById("upgradebutton").onclick=emil4;
             }
         }
@@ -57,9 +57,9 @@
                     document.getElementById("k").innerHTML = x - 1000;
                         x = x - 1000;
                         
-            document.getElementById("f").src="emil4.png";
+            document.getElementById("f").src="/images/emil4.png";
             document.getElementById("f").onclick=emilcounter16x;
-            document.getElementById("upgradebutton").innerHTML = "Upgrade 10000";
+            document.getElementById("Upgradepic").src = "/images/MouseUpgrade5.png";
             document.getElementById("upgradebutton").onclick=emil5;
             }
         }
@@ -73,9 +73,9 @@
                     document.getElementById("k").innerHTML = x - 10000;
                         x = x - 10000;
                         
-            document.getElementById("f").src="emil5.png";
+            document.getElementById("f").src="/images/emil5.png";
             document.getElementById("f").onclick=emilcounter50x;
-            document.getElementById("upgradebutton").innerHTML = "Upgrade 100 000";
+            document.getElementById("Upgradepic").innerHTML = "Upgrade 100 000";
             document.getElementById("upgradebutton").onclick=emil6;
             }
         }
@@ -88,9 +88,9 @@
                 document.getElementById("k").innerHTML = x - 100000;
                 x = x - 100000;
 
-            document.getElementById("f").src="Windis.png";
+            document.getElementById("f").src="/images/Windis.png";
             document.getElementById("f").onclick=emilcounter100x;
-            document.getElementById("upgradebutton").innerHTML = "Maxed";
+            document.getElementById("Upgradepic").src = "/images/Checkmark.png";
             document.getElementById("upgradebutton").onclick=emil7;
             }
         }
