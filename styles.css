@@ -20,13 +20,13 @@ body {
     border-radius: 0px;
 }
 
+
 #piss{
     border:0px;
 }
 
 img{
     vertical-align: middle;
-
 }
 
 * {
@@ -40,7 +40,7 @@ img{
   /* Style the header */
   .header {
     background-color: #f1f1f1;
-    padding: 30px;
+    max-height: 150px;;
     text-align: center;
     font-size: 35px;
   }
@@ -86,4 +86,8 @@ img{
 .Gudnummercss{
     font-size: 1.5rem;
 
+}
+
+.Cursorbutton{
+  height:146px;
 }
