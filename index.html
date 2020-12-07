@@ -40,22 +40,23 @@
       </div>
       
     <script>
-        var x;
+        var x, y;
         x = 0;
+        y = 0;
         function emilcounter(){
             document.getElementById("Gudnummer").innerHTML = x + 1;
             x = x + 1;
         }
 
         function Upgradebuttona(){
-            if (x > 9){
+            if (x > 9 , y = 0){
                 document.getElementById("Upgradepic1").src = "/images/checkmark.png";
                 document.getElementById("Gudnummer").innerHTML = x - 10;
                 x = x - 10;
                 document.getElementById("f").onclick = emilcounter4x;
                 document.getElementById("f").src = "/images/emil2.jpg";
                 //document.getElementById("cost10").innerHTML = ("");
-
+                y = 1;
             }
         }
         function emilcounter4x(){
@@ -70,6 +71,7 @@
                 x = x - 100;
                 document.getElementById("f").onclick = emilcounter10x;
                 document.getElementById("f").src = "/images/emil3.png";
+                y = 2;
             }
         }
         function emilcounter10x(){
