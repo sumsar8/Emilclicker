@@ -43,6 +43,11 @@
         var x, y;
         x = 0;
         y = 0;
+
+        if (typeof(Storage) !== "undefined") {
+            localStorage.setItem("x", "x");
+            document.getElementById("result").innerHTML = localStorage.getItem("x");
+        }
         function emilcounter(){
             document.getElementById("Gudnummer").innerHTML = x + 1;
             x = x + 1;
