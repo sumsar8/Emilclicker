@@ -29,7 +29,7 @@
     <button class="button" id="piss" onclick="emilcounter()"><img id="f" class="button" src="/images/emil1.jpg" width="250px" height="250px" ondragstart="return false;"></button>
 
     </center></div>
-
+ 
         <div class="column side" style="background-color:#ccc;">
         
         </div>
@@ -40,24 +40,22 @@
       </div>
       
     <script>
-        var x, y;
+        var x, y, emilcoins;
         x = 0;
         y = 0;
 
-        if (typeof(Storage) !== "undefined") {
-            localStorage.setItem("x", "x");
-            document.getElementById("result").innerHTML = localStorage.getItem("x");
-        }
+        
+        
         function emilcounter(){
-            document.getElementById("Gudnummer").innerHTML = x + 1;
             x = x + 1;
+            document.getElementById("Gudnummer").innerHTML = x;
         }
 
         function Upgradebuttona(){
             if (x > 9){
                 document.getElementById("Upgradepic1").src = "/images/checkmark.png";
-                document.getElementById("Gudnummer").innerHTML = x - 10;
                 x = x - 10;
+                document.getElementById("Gudnummer").innerHTML = x;
                 document.getElementById("f").src = "/images/emil2.jpg";
                 document.getElementById("cost10").innerHTML = ("Bought!");
                     if (y == 0){
@@ -68,15 +66,15 @@
             }
         }
         function emilcounter4x(){
-            document.getElementById("Gudnummer").innerHTML = x + 3;
             x = x + 3;
+            document.getElementById("Gudnummer").innerHTML = x;
         }
 
         function Upgradebuttonb(){
             if (x > 99){
                 document.getElementById("Upgradepic2").src = "/images/checkmark.png";
-                document.getElementById("Gudnummer").innerHTML = x - 100;
                 x = x - 100;
+                document.getElementById("Gudnummer").innerHTML = x;
                 document.getElementById("f").src = "/images/emil3.png";
                 document.getElementById("cost100").innerHTML = ("Bought!");
                     if (y == 0, 1){
@@ -86,15 +84,15 @@
             }
         }
         function emilcounter10x(){
-            document.getElementById("Gudnummer").innerHTML = x + 9;
             x = x + 9;
+            document.getElementById("Gudnummer").innerHTML = x;
         }
 
         function Upgradebuttonc(){
             if (x > 999){
                 document.getElementById("Upgradepic3").src = "/images/checkmark.png";
-                document.getElementById("Gudnummer").innerHTML = x - 1000;
                 x = x - 1000;
+                document.getElementById("Gudnummer").innerHTML = x;
                 document.getElementById("f").src = "/images/emil4.png";
                 document.getElementById("cost1000").innerHTML = ("Bought!");
                     if (y == 0, 1, 2)
@@ -103,15 +101,15 @@
             }
         }
         function emilcounter16x(){
-            document.getElementById("Gudnummer").innerHTML = x + 15;
             x = x + 15;
+            document.getElementById("Gudnummer").innerHTML = x + 15;
         }
         
         function Upgradebuttond(){
             if (x > 9999){
                 document.getElementById("Upgradepic4").src = "/images/checkmark.png";
-                document.getElementById("Gudnummer").innerHTML = x - 10000;
                 x = x - 10000;
+                document.getElementById("Gudnummer").innerHTML = x;
                 document.getElementById("f").src = "/images/emil5.png";
                 document.getElementById("cost10000").innerHTML = ("Bought!");
                     if (y == 0, 1, 2, 3)
@@ -120,15 +118,15 @@
             }
         }
         function emilcounter50x(){
-            document.getElementById("Gudnummer").innerHTML = x + 49;
             x = x + 49;
+            document.getElementById("Gudnummer").innerHTML = x;
         }
         
         function Upgradebuttone(){
             if (x > 99999){
                 document.getElementById("Upgradepic5").src = "/images/checkmark.png";
-                document.getElementById("Gudnummer").innerHTML = x - 100000;
                 x = x - 100000;
+                document.getElementById("Gudnummer").innerHTML = x;
                 document.getElementById("f").src = "/images/Windis.png";
                 document.getElementById("cost100000").innerHTML = ("Bought!");
                     if (y == 0, 1, 2, 3, 4)
@@ -137,8 +135,8 @@
             }
         }
         function emilcounter100x(){
-            document.getElementById("Gudnummer").innerHTML = x + 99;
             x = x + 99;
+            document.getElementById("Gudnummer").innerHTML = x;
         }
 
     
