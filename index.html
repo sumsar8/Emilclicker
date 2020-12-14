@@ -24,7 +24,7 @@
 
         <div class="column middle" style="background-color:#bbb;"><center>
         <div class="emilcounterbox">
-        <p id="Gudnummer" class="Gudnummercss">0</p>
+        <p id="Gudnummer" class="Gudnummercss" id="result">0</p>
     </div>
     <button class="button" id="piss" onclick="emilcounter()"><img id="f" class="button" src="/images/emil1.jpg" width="250px" height="250px" ondragstart="return false;"></button>
 
@@ -43,9 +43,8 @@
         var x, y, emilcoins;
         x = 0;
         y = 0;
+        
 
-        
-        
         function emilcounter(){
             x = x + 1;
             document.getElementById("Gudnummer").innerHTML = x;
@@ -138,8 +137,6 @@
             x = x + 99;
             document.getElementById("Gudnummer").innerHTML = x;
         }
-
-    
     </script>
 </body>
 </html>
