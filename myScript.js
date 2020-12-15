@@ -3,16 +3,16 @@ x = 0;
 y = 0;
 
 
-function emilcounter(){
-    x = x + 1;
-    document.getElementById("Gudnummer").innerHTML = x;
+function clickCounter(){
+    localStorage.clickcount = Number(localStorage.clickcount)+1;
+    document.getElementById("Gudnummer").innerHTML = localStorage.clickcount;
 }
 
 function Upgradebuttona(){
-    if (x > 9){
+    if (localStorage.clickcount > 9){
         document.getElementById("Upgradepic1").src = "/images/checkmark.png";
-        x = x - 10;
-        document.getElementById("Gudnummer").innerHTML = x;
+        localStorage.clickcount = Number(localStorage.clickcount)-10;
+        document.getElementById("Gudnummer").innerHTML = localStorage.clickcount;
         document.getElementById("f").src = "/images/emil2.jpg";
         document.getElementById("cost10").innerHTML = ("Bought!");
             if (y == 0){
@@ -23,12 +23,12 @@ function Upgradebuttona(){
     }
 }
 function emilcounter4x(){
-    x = x + 3;
+    x = Number(localStorage.clickcount) + 3;
     document.getElementById("Gudnummer").innerHTML = x;
 }
 
 function Upgradebuttonb(){
-    if (x > 99){
+    if (localStorage.clickcount > 99){
         document.getElementById("Upgradepic2").src = "/images/checkmark.png";
         x = x - 100;
         document.getElementById("Gudnummer").innerHTML = x;
