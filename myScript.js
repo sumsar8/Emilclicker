@@ -12,7 +12,8 @@ function clickCounter() {
 if (localStorage.knappuppgraderingar == 1) {
     document.getElementById("idforclickcounter").onclick = emilcounter4x;
     document.getElementById("Upgradepic1").src = "/images/checkmark.png"
-    document.getElementById("cost10").innerHTML = ("Bought!");   
+    document.getElementById("cost10").innerHTML = ("Bought!");
+    document.getElementById("f").src = "/images/emil2.jpg"
 }
 
 if (localStorage.knappuppgraderingar == 2) {
@@ -20,9 +21,48 @@ if (localStorage.knappuppgraderingar == 2) {
     document.getElementById("Upgradepic1").src = "/images/checkmark.png"
     document.getElementById("cost10").innerHTML = ("Bought!");
     document.getElementById("Upgradepic2").src = "/images/checkmark.png"
-    document.getElementById("cost100").innerHTML = ("Bought!");   
+    document.getElementById("cost100").innerHTML = ("Bought!");
+    document.getElementById("f").src = "/images/emil3.png" 
 }
 
+if (localStorage.knappuppgraderingar == 3) {
+    document.getElementById("idforclickcounter").onclick = emilcounter16x;
+    document.getElementById("Upgradepic1").src = "/images/checkmark.png"
+    document.getElementById("cost10").innerHTML = ("Bought!");
+    document.getElementById("Upgradepic2").src = "/images/checkmark.png"
+    document.getElementById("cost100").innerHTML = ("Bought!");
+    document.getElementById("Upgradepic3").src = "/images/checkmark.png"
+    document.getElementById("cost1000").innerHTML = ("Bought!");
+    document.getElementById("f").src = "/images/emil4.png" 
+}
+
+if (localStorage.knappuppgraderingar == 4) {
+    document.getElementById("idforclickcounter").onclick = emilcounter50x;
+    document.getElementById("Upgradepic1").src = "/images/checkmark.png"
+    document.getElementById("cost10").innerHTML = ("Bought!");
+    document.getElementById("Upgradepic2").src = "/images/checkmark.png"
+    document.getElementById("cost100").innerHTML = ("Bought!");
+    document.getElementById("Upgradepic3").src = "/images/checkmark.png"
+    document.getElementById("cost1000").innerHTML = ("Bought!");
+    document.getElementById("Upgradepic4").src = "/images/checkmark.png"
+    document.getElementById("cost10000").innerHTML = ("Bought!");
+    document.getElementById("f").src = "/images/emil5.png" 
+}
+
+if (localStorage.knappuppgraderingar == 5) {
+    document.getElementById("idforclickcounter").onclick = emilcounter100x;
+    document.getElementById("Upgradepic1").src = "/images/checkmark.png"
+    document.getElementById("cost10").innerHTML = ("Bought!");
+    document.getElementById("Upgradepic2").src = "/images/checkmark.png"
+    document.getElementById("cost100").innerHTML = ("Bought!");
+    document.getElementById("Upgradepic3").src = "/images/checkmark.png"
+    document.getElementById("cost1000").innerHTML = ("Bought!");
+    document.getElementById("Upgradepic4").src = "/images/checkmark.png"
+    document.getElementById("cost10000").innerHTML = ("Bought!");
+    document.getElementById("Upgradepic5").src = "/images/checkmark.png"
+    document.getElementById("cost100000").innerHTML = ("Bought!");
+    document.getElementById("f").src = "/images/Windis.png" 
+}
 function Upgradebuttona(){
     if (localStorage.clickcount > 9){
         document.getElementById("Upgradepic1").src = "/images/checkmark.png";
@@ -110,7 +150,7 @@ function Upgradebuttone(){
         
         if (localStorage.knappuppgraderingar == 0, 1, 2, 3, 4){
             document.getElementById("idforclickcounter").onclick = emilcounter100x;
-            localStorage.knappuppgraderingar = 4;
+            localStorage.knappuppgraderingar = 5;
         }
     }
 }
@@ -128,5 +168,10 @@ function resetlocalstorage(){
     document.getElementById("cost10").innerHTML = ("Cost: 10");
     document.getElementById("Upgradepic2").src = "/images/MouseUpgrade3.png";
     document.getElementById("cost100").innerHTML = ("Cost: 100");
-
+    document.getElementById("Upgradepic3").src = "/images/MouseUpgrade4.png";
+    document.getElementById("cost1000").innerHTML = ("Cost: 1000");
+    document.getElementById("Upgradepic4").src = "/images/MouseUpgrade5.png";
+    document.getElementById("cost10000").innerHTML = ("Cost: 10 000");
+    document.getElementById("Upgradepic5").src = "/images/MouseUpgrade6.png";
+    document.getElementById("cost100000").innerHTML = ("Cost: 100 000");
 }
