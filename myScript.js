@@ -9,6 +9,20 @@ function clickCounter() {
     document.getElementById("result").innerHTML = localStorage.clickcount;
 }
 
+if (localStorage.knappuppgraderingar == 1) {
+    document.getElementById("idforclickcounter").onclick = emilcounter4x;
+    document.getElementById("Upgradepic1").src = "/images/checkmark.png"
+    document.getElementById("cost10").innerHTML = ("Bought!");   
+}
+
+if (localStorage.knappuppgraderingar == 2) {
+    document.getElementById("idforclickcounter").onclick = emilcounter10x;
+    document.getElementById("Upgradepic1").src = "/images/checkmark.png"
+    document.getElementById("cost10").innerHTML = ("Bought!");
+    document.getElementById("Upgradepic2").src = "/images/checkmark.png"
+    document.getElementById("cost100").innerHTML = ("Bought!");   
+}
+
 function Upgradebuttona(){
     if (localStorage.clickcount > 9){
         document.getElementById("Upgradepic1").src = "/images/checkmark.png";
