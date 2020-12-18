@@ -9,11 +9,6 @@ function clickCounter() {
     document.getElementById("result").innerHTML = localStorage.clickcount;
 }
 
-    if (localStorage.knappuppgraderingar == 1)
-        document.getElementById("idforclickcounter").onclick = emilcounter4x;
-        document.getElementById("Upgradepic1").src = "/images/checkmark.png"
-        document.getElementById("cost10").innerHTML = ("Bought!");   
-
 function Upgradebuttona(){
     if (localStorage.clickcount > 9){
         document.getElementById("Upgradepic1").src = "/images/checkmark.png";
@@ -117,5 +112,7 @@ function resetlocalstorage(){
     localStorage.knappuppgraderingar = 0;
     document.getElementById("Upgradepic1").src = "/images/MouseUpgrade2.png";
     document.getElementById("cost10").innerHTML = ("Cost: 10");
+    document.getElementById("Upgradepic2").src = "/images/MouseUpgrade3.png";
+    document.getElementById("cost100").innerHTML = ("Cost: 100");
 
 }
