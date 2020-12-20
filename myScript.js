@@ -14,6 +14,7 @@ if (localStorage.knappuppgraderingar == 1) {
     document.getElementById("Upgradepic1").src = "/images/checkmark.png"
     document.getElementById("cost10").innerHTML = ("Bought!");
     document.getElementById("f").src = "/images/emil2.jpg"
+    document.getElementById("upgradebutton1").onclick = shitclick;
 }
 
 if (localStorage.knappuppgraderingar == 2) {
@@ -23,6 +24,9 @@ if (localStorage.knappuppgraderingar == 2) {
     document.getElementById("Upgradepic2").src = "/images/checkmark.png"
     document.getElementById("cost100").innerHTML = ("Bought!");
     document.getElementById("f").src = "/images/emil3.png" 
+    document.getElementById("upgradebutton1").onclick = shitclick;
+    document.getElementById("upgradebutton2").onclick = shitclick;
+
 }
 
 if (localStorage.knappuppgraderingar == 3) {
@@ -34,6 +38,9 @@ if (localStorage.knappuppgraderingar == 3) {
     document.getElementById("Upgradepic3").src = "/images/checkmark.png"
     document.getElementById("cost1000").innerHTML = ("Bought!");
     document.getElementById("f").src = "/images/emil4.png" 
+    document.getElementById("upgradebutton1").onclick = shitclick;
+    document.getElementById("upgradebutton2").onclick = shitclick;
+    document.getElementById("upgradebutton3").onclick = shitclick;
 }
 
 if (localStorage.knappuppgraderingar == 4) {
@@ -47,6 +54,10 @@ if (localStorage.knappuppgraderingar == 4) {
     document.getElementById("Upgradepic4").src = "/images/checkmark.png"
     document.getElementById("cost10000").innerHTML = ("Bought!");
     document.getElementById("f").src = "/images/emil5.png" 
+    document.getElementById("upgradebutton1").onclick = shitclick;
+    document.getElementById("upgradebutton2").onclick = shitclick;
+    document.getElementById("upgradebutton3").onclick = shitclick;
+    document.getElementById("upgradebutton4").onclick = shitclick;
 }
 
 if (localStorage.knappuppgraderingar == 5) {
@@ -61,7 +72,12 @@ if (localStorage.knappuppgraderingar == 5) {
     document.getElementById("cost10000").innerHTML = ("Bought!");
     document.getElementById("Upgradepic5").src = "/images/checkmark.png"
     document.getElementById("cost100000").innerHTML = ("Bought!");
-    document.getElementById("f").src = "/images/Windis.png" 
+    document.getElementById("f").src = "/images/Windis.png"
+    document.getElementById("upgradebutton1").onclick = shitclick;
+    document.getElementById("upgradebutton2").onclick = shitclick;
+    document.getElementById("upgradebutton3").onclick = shitclick;
+    document.getElementById("upgradebutton4").onclick = shitclick;
+    document.getElementById("upgradebutton5").onclick = shitclick;
 }
 function Upgradebuttona(){
     if (localStorage.clickcount > 9){
@@ -70,7 +86,7 @@ function Upgradebuttona(){
         localStorage.clickcount = Number(localStorage.clickcount) - 10;
         document.getElementById("f").src = "/images/emil2.jpg";
         document.getElementById("cost10").innerHTML = ("Bought!");
-        
+        document.getElementById("upgradebutton1").onclick = shitclick;
         if (localStorage.knappuppgraderingar == 0){
             document.getElementById("idforclickcounter").onclick = emilcounter4x;
             localStorage.knappuppgraderingar = 1;
@@ -154,6 +170,11 @@ function Upgradebuttone(){
         }
     }
 }
+
+function shitclick(){
+
+}
+
 function emilcounter100x(){
     localStorage.clickcount = Number(localStorage.clickcount) + 100;
     document.getElementById("result").innerHTML = localStorage.clickcount;
