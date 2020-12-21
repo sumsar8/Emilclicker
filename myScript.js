@@ -12,6 +12,10 @@ function clickCounter() {
     document.getElementById("result").innerHTML = localStorage.clickcount;
 }
 
+function oga() {
+    
+}
+
 function penisse() {
     localStorage.clickcount = Number(localStorage.clickcount) + 1;
     document.getElementById("result").innerHTML = localStorage.clickcount;
