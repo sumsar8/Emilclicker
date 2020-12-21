@@ -26,7 +26,6 @@ if (localStorage.knappuppgraderingar == 2) {
     document.getElementById("f").src = "/images/emil3.png" 
     document.getElementById("upgradebutton1").onclick = shitclick;
     document.getElementById("upgradebutton2").onclick = shitclick;
-
 }
 
 if (localStorage.knappuppgraderingar == 3) {
