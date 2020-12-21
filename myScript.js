@@ -2,6 +2,8 @@ var x, y, emilcoins;
 y = 0;
 
 localStorage.clickcount = Number(localStorage.clickcount);
+localStorage.knappuppgraderingar = Number(localStorage.knappuppgraderingar);
+
 document.getElementById("result").innerHTML = localStorage.clickcount;
 
 function clickCounter() {
