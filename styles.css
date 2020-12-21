@@ -21,6 +21,16 @@ body {
     border-radius: 0px;
 }
 
+.resetbutton {
+  touch-action: manipulation;
+  size: 0px;
+  border: 0px;
+  padding: 10px;
+  border: solid;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: large;
+}
 
 #piss{
     border:0px;
@@ -55,13 +65,12 @@ img{
   
   /* Left and right column */
   .column.side {
-    width: 25%;
+    width: 20%;
   }
   
   /* Middle column */
   .column.middle {
-    width: 50%;
-    position: c
+    width: 80%;
   }
   
   /* Clear floats after the columns */
