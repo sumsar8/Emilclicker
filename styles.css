@@ -50,7 +50,6 @@ img{
   
   .header {
     background-color: #f1f1f1;
-
     text-align: center;
     font-size: 35px;
   }
@@ -69,7 +68,6 @@ img{
     width: 80%;
   }
   
-  /* Clear floats after the columns */
   .row:after {
     content: "";
     display: table;
