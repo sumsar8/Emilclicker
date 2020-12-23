@@ -93,3 +93,13 @@ img{
 .Cursorbutton{
   height:146px;
 }
+
+.cpsbutton {
+  touch-action: manipulation;
+  size: 0px;
+  border: 0px;
+  padding: 0px;
+  border: none;
+  display: inline-block;
+  border-radius: 0px;
+}

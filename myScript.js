@@ -1,22 +1,27 @@
-var x, y, emilcoins;
-y = 0;
+
+
+
+
 
 setInterval(() => {
-    penisse()
+    if (localStorage.cps > 1)
+        oga()
 }, 1000);
+
+function penisse() {
+    if (localStorage.clickcount > 99){
+        localStorage.clickcount = Number(localStorage.clickcount) - 100;
+        localStorage.cps = Number(localStorage.cps) + 1;
+    }
+}
+function oga(){
+    localStorage.clickcount = Number(localStorage.clickcount) + Number(localStorage.cps);
+    document.getElementById("result").innerHTML = localStorage.clickcount;
+}
 
 document.getElementById("result").innerHTML = localStorage.clickcount;
 
 function clickCounter() {
-    localStorage.clickcount = Number(localStorage.clickcount) + 1;
-    document.getElementById("result").innerHTML = localStorage.clickcount;
-}
-
-function oga() {
-    
-}
-
-function penisse() {
     localStorage.clickcount = Number(localStorage.clickcount) + 1;
     document.getElementById("result").innerHTML = localStorage.clickcount;
 }
@@ -48,7 +53,7 @@ function Upgradebuttonb(){
         localStorage.clickcount = Number(localStorage.clickcount) - 100;
         document.getElementById("f").src = "images/emil3.png";
         document.getElementById("cost100").innerHTML = ("Bought!");
-        
+        document.getElementById("upgradebutton2").onclick = shitclick;
         if (localStorage.knappuppgraderingar == 0, 1){
             document.getElementById("idforclickcounter").onclick = emilcounter10x;
             localStorage.knappuppgraderingar = 2;
@@ -67,7 +72,7 @@ function Upgradebuttonc(){
         localStorage.clickcount = Number(localStorage.clickcount) - 1000;
         document.getElementById("f").src = "images/emil4.png";
         document.getElementById("cost1000").innerHTML = ("Bought!");
-        
+        document.getElementById("upgradebutton3").onclick = shitclick;
         if (localStorage.knappuppgraderingar == 0, 1, 2){
             document.getElementById("idforclickcounter").onclick = emilcounter16x;
             localStorage.knappuppgraderingar = 3;
@@ -86,7 +91,7 @@ function Upgradebuttond(){
         localStorage.clickcount = Number(localStorage.clickcount) - 10000;
         document.getElementById("f").src = "images/emil5.png";
         document.getElementById("cost10000").innerHTML = ("Bought!");
-        
+        document.getElementById("upgradebutton4").onclick = shitclick;
         if (localStorage.knappuppgraderingar == 0, 1, 2, 3){
             document.getElementById("idforclickcounter").onclick = emilcounter50x;
             localStorage.knappuppgraderingar = 4;
@@ -105,7 +110,7 @@ function Upgradebuttone(){
         localStorage.clickcount = Number(localStorage.clickcount) - 100000;
         document.getElementById("f").src = "images/Windis.png";
         document.getElementById("cost100000").innerHTML = ("Bought!");
-        
+        document.getElementById("upgradebutton5").onclick = shitclick;
         if (localStorage.knappuppgraderingar == 0, 1, 2, 3, 4){
             document.getElementById("idforclickcounter").onclick = emilcounter100x;
             localStorage.knappuppgraderingar = 5;
@@ -137,6 +142,12 @@ function resetlocalstorage(){
     document.getElementById("cost10000").innerHTML = ("Cost: 10 000");
     document.getElementById("Upgradepic5").src = "images/MouseUpgrade6.png";
     document.getElementById("cost100000").innerHTML = ("Cost: 100 000");
+    document.getElementById("upgradebutton1").onclick = Upgradebuttona;
+    document.getElementById("upgradebutton2").onclick = Upgradebuttonb;
+    document.getElementById("upgradebutton3").onclick = Upgradebuttonc;
+    document.getElementById("upgradebutton4").onclick = Upgradebuttond;
+    document.getElementById("upgradebutton5").onclick = Upgradebuttone;
+    localStorage.cps = Number(localStorage.cps) - Number(localStorage.cps);
 }
 
 
