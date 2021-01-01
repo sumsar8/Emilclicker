@@ -1,18 +1,15 @@
 
-
-
-document.getElementById("sauce").innerHTML = localstorage.cpscost;
 setInterval(() => {
     if (localStorage.cps > 0.9)
         oga()
 }, 1000);
 
 function penisse() {
-    if (localStorage.clickcount > 99){
+    if (localStorage.clickcount > Number(localStorage.cpscost) - 1){
+        localStorage.cps = Number(localStorage.cps) + 1;
         localStorage.cpscost = Number(localStorage.cps) * 100;
         localStorage.clickcount = Number(localStorage.clickcount) - Number(localStorage.cpscost);
-        localStorage.cps = Number(localStorage.cps) + 1;
-        document.getElementById("sauce").innerHTML = localstorage.cpscost;
+        document.getElementById("cpsdisplay").innerHTML = localStorage.cps;
     }
 }
 function oga(){
@@ -132,7 +129,8 @@ function resetlocalstorage(){
     document.getElementById("idforclickcounter").onclick = clickCounter;
     document.getElementById("f").src = "images/emil1.jpg";
     localStorage.knappuppgraderingar = 0;
-    localStorage.cps = Number(localStorage.cps) - Number(localStorage.cps);
+    localStorage.cps = 0;
+    localStorage.cpscost = 0
     document.getElementById("Upgradepic1").src = "images/MouseUpgrade2.png";
     document.getElementById("cost10").innerHTML = ("Cost: 10");
     document.getElementById("Upgradepic2").src = "images/MouseUpgrade3.png";
