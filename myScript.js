@@ -1,17 +1,18 @@
 
 
 
-
-
+document.getElementById("sauce").innerHTML = localstorage.cpscost;
 setInterval(() => {
-    if (localStorage.cps > 1)
+    if (localStorage.cps > 0.9)
         oga()
 }, 1000);
 
 function penisse() {
     if (localStorage.clickcount > 99){
-        localStorage.clickcount = Number(localStorage.clickcount) - 100;
+        localStorage.cpscost = Number(localStorage.cps) * 100;
+        localStorage.clickcount = Number(localStorage.clickcount) - Number(localStorage.cpscost);
         localStorage.cps = Number(localStorage.cps) + 1;
+        document.getElementById("sauce").innerHTML = localstorage.cpscost;
     }
 }
 function oga(){
@@ -119,7 +120,6 @@ function Upgradebuttone(){
 }
 
 function shitclick(){
-
 }
 
 function emilcounter100x(){
@@ -132,6 +132,7 @@ function resetlocalstorage(){
     document.getElementById("idforclickcounter").onclick = clickCounter;
     document.getElementById("f").src = "images/emil1.jpg";
     localStorage.knappuppgraderingar = 0;
+    localStorage.cps = Number(localStorage.cps) - Number(localStorage.cps);
     document.getElementById("Upgradepic1").src = "images/MouseUpgrade2.png";
     document.getElementById("cost10").innerHTML = ("Cost: 10");
     document.getElementById("Upgradepic2").src = "images/MouseUpgrade3.png";
@@ -147,7 +148,6 @@ function resetlocalstorage(){
     document.getElementById("upgradebutton3").onclick = Upgradebuttonc;
     document.getElementById("upgradebutton4").onclick = Upgradebuttond;
     document.getElementById("upgradebutton5").onclick = Upgradebuttone;
-    localStorage.cps = Number(localStorage.cps) - Number(localStorage.cps);
 }
 
 
