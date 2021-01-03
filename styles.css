@@ -4,9 +4,9 @@
     max-width: 175px;
     max-height: 50px;
     min-height: 50px;
-    margin-left: 10px;
+    margin-left: 50;
     margin-top: 10px;   
-    position: center;
+    margin-bottom: 35%;
 }
 body {
     margin: 0px;
@@ -71,6 +71,9 @@ img{
   /* Middle column */
   .column.middle {
     width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   /* Clear floats after the columns */
