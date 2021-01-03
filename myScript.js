@@ -9,7 +9,6 @@ function penisse() {
         localStorage.cps = Number(localStorage.cps) + 1;
         localStorage.cpscost = Number(localStorage.cps) * 100;
         localStorage.clickcount = Number(localStorage.clickcount) - Number(localStorage.cpscost);
-        document.getElementById("cpsdisplay").innerHTML = localStorage.cps;
     }
 }
 function oga(){
@@ -17,9 +16,7 @@ function oga(){
     document.getElementById("result").innerHTML = localStorage.clickcount;
 }
 
-document.getElementById("result").innerHTML = localStorage.clickcount;
-
-function clickCounter() {
+function clickCounter(  ) {
     localStorage.clickcount = Number(localStorage.clickcount) + 1;
     document.getElementById("result").innerHTML = localStorage.clickcount;
 }
@@ -117,6 +114,7 @@ function Upgradebuttone(){
 }
 
 function shitclick(){
+    window.alert("you've already bought this dumbass")
 }
 
 function emilcounter100x(){
