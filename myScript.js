@@ -2,10 +2,10 @@
 setInterval(() => {
     if (localStorage.cps > 0.9)
         oga()
-}, 1000);
+}, 0.0001);
 
 function penisse() {
-    if (localStorage.clickcount > Number(localStorage.cpscost) - 1){
+    if (localStorage.clickcount > Number(localStorage.cpscost) + 99){
         localStorage.cps = Number(localStorage.cps) + 1;
         localStorage.cpscost = Number(localStorage.cps) * 100;
         localStorage.clickcount = Number(localStorage.clickcount) - Number(localStorage.cpscost);
@@ -103,7 +103,7 @@ function Upgradebuttone(){
         document.getElementById("Upgradepic5").src = "images/checkmark.png";
         document.getElementById("result").innerHTML = Number(localStorage.clickcount) - 100000;
         localStorage.clickcount = Number(localStorage.clickcount) - 100000;
-        document.getElementById("f").src = "images/Windis.png";
+        document.getElementById("f").src = "images/2020-12-23 18.05.35 steamcommunity.com 97726866c12c.png";
         document.getElementById("cost100000").innerHTML = ("Bought!");
         document.getElementById("upgradebutton5").onclick = shitclick;
         if (localStorage.knappuppgraderingar == 0, 1, 2, 3, 4){
