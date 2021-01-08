@@ -2,7 +2,7 @@
 setInterval(() => {
     if (localStorage.cps > 0.9)
         oga()
-}, 0.0001);
+}, 1000);
 
 function penisse() {
     if (localStorage.clickcount > Number(localStorage.cpscost) + 99){
@@ -33,7 +33,6 @@ function Upgradebuttona(){
             document.getElementById("idforclickcounter").onclick = emilcounter4x;
             localStorage.knappuppgraderingar = 1;
         }
-        
     }
 }
 function emilcounter4x(){
@@ -114,7 +113,7 @@ function Upgradebuttone(){
 }
 
 function shitclick(){
-    window.alert("you've already bought this dumbass")
+    window.alert("you've already bought this dumbass");
 }
 
 function emilcounter100x(){
@@ -128,7 +127,7 @@ function resetlocalstorage(){
     document.getElementById("f").src = "images/emil1.jpg";
     localStorage.knappuppgraderingar = 0;
     localStorage.cps = 0;
-    localStorage.cpscost = 0
+    localStorage.cpscost = 0;
     document.getElementById("Upgradepic1").src = "images/MouseUpgrade2.png";
     document.getElementById("cost10").innerHTML = ("Cost: 10");
     document.getElementById("Upgradepic2").src = "images/MouseUpgrade3.png";
