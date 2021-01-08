@@ -1,6 +1,6 @@
 
 setInterval(() => {
-    if (localStorage.cps > 0.9)
+    if (localStorage.cps >= 1)
         oga()
 }, 1000);
 
@@ -22,7 +22,7 @@ function clickCounter(  ) {
 }
 
 function Upgradebuttona(){
-    if (localStorage.clickcount > 9){
+    if (localStorage.clickcount >= 10){
         document.getElementById("Upgradepic1").src = "images/checkmark.png";
         document.getElementById("result").innerHTML = Number(localStorage.clickcount) - 10;
         localStorage.clickcount = Number(localStorage.clickcount) - 10;
@@ -41,7 +41,7 @@ function emilcounter4x(){
 }
 
 function Upgradebuttonb(){
-    if (localStorage.clickcount > 99){
+    if (localStorage.clickcount >= 100){
         document.getElementById("Upgradepic2").src = "images/checkmark.png";
         document.getElementById("result").innerHTML = Number(localStorage.clickcount) - 100;
         localStorage.clickcount = Number(localStorage.clickcount) - 100;

@@ -69,8 +69,6 @@
 
      score.innerHTML = state.score.get();
 
-     // localStorage.removeItem(LOCALSTORAGE_KEY);
-     
      for(let el of upgrade_btns) {
           let highest = {cost: 0, el: null};
           
