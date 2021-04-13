@@ -1,3 +1,5 @@
+windown.onload
+
 
 setInterval(() => {
     if (localStorage.cps >= 1)
